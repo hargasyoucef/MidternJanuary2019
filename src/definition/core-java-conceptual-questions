@@ -1,14 +1,18 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
-
-
+A. Computer programming languages allow us to give instructions to a computer in a language the computer understands.
+Just as many human-based languages exist, there are an array of computer programming languages that programmers can use
+to communicate with a computer. The term programming language usually refers to high-level languages, such as BASIC, C,
+C++, COBOL, Java, FORTRAN, Ada, and Pascal.
 
 
 What jdk contains or composed of and define each components?
-A.
-
+A. The Java Development Kit (JDK) provides the foundation upon which all applications that are targeted toward the Java
+platform are built. The JDK includes a variety of tools and utilities that perform a variety of tasks, which include:
+Compiler: which compiles source code and converts it into bytecode,
+Java virtual machines (JVMs): which uses a just-in-time (JIT) compiler to convert bytecode into machine code, and executes
+the   program using the Java Runtime Environment (JRE)
 
 
 
