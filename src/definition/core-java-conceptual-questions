@@ -93,30 +93,105 @@ Preventing naming conflicts. Making searching/locating and usage of classes, int
 Providing controlled access. Packages can be considered as data encapsulation (or data-hiding).
 -  java.lang package is imported by default
 
-
 What is API? Name list of API that you have used so far.
+Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK).
+It includes all Java packages, classes, and interfaces, along  with their methods, fields, and constructors. These
+prewritten classes provide a tremendous amount of functionality to a programmer.
+I have used so far: Class, String, ListArray, Scanner, LinkedList, LinkedHashMap, HashMap ....
+
 Does java support multiple inheritance, explain why or why not?
+No java doesn't support multiple inheritance directly because it leads to overiding of methods when both extended class
+have a same method name.
+
 What is method overloading and when it happens?
+Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument
+lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor
+having different argument lists. And it happens in compile time.
+
 Explain exceptions in java and how to handle it.
+Java - Exceptions. An exception (or exceptional event) is a problem that arises during the execution of a program.
+When an Exception occurs, within the try block,  the normal flow of the program is disrupted and the program/Application terminates abnormally,
+which is not recommended, therefore, these exceptions are to be handled.Your code can catch this exception (using catch block) and
+handle it in some rational manner. System-generated exceptions are automatically thrown by the Java run-time system.
+To manually throw an exception, use the keyword throw.
+
 What is static keyword in java? How it has been used in variables and methods ?
+If you apply static keyword with any method, it is known as static method. A static method belongs to the class rather
+than the object of a class. A static method can be invoked without the need for creating an instance of a class.
+A static method can access static data member and can change the value of it.
+Static variable in Java: Only a single copy of static variable is created and shared among all the instances of the class,
+they are class level variables.
+
 What is final and how it has been used variables and methods?
-What is final, finally and finalize?
+final keyword is used in different contexts. First of all, final is a non-access modifier applicable
+only to a variable, a method or a class. When a variable is declared with final keyword, its value can't be modified, essentially, a constant.
+A final  method declaration is to to indicate that the method cannot be overridden by subclasses.
+
+What is final, finally and finalize?'
+- Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+- Finally is used to place important code, it will be executed whether exception is handled or not.
+- Finalize is used to perform clean up processing just before object is garbage collected.
+
 What is a constructor ?
+A constructor in Java is a block of code similar to a method that's called when an instance of an object is created.
+A constructor doesn't have a return type, it takes the same name as class.
+
 Can we have multiple constructors in a class?
+Yes, we can.
+
 If we don't have a constructor declared, what is called during the object creation?
+It's called Default Constructor.
+
 What is "this" keyword in java ?
+Keyword THIS is a reference variable in Java that refers to the current object. The various usages of 'THIS' keyword in
+Java are as follows: It can be used to refer instance variable of current class. It can be used to invoke or initiate
+current class constructor.
+
 What is "super" keyword in java? How many possible way can you use?
+super is a keyword. It is used inside a sub-class method definition to call a method defined in the super class.
+Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword.
+It is also used by class constructors to invoke constructors of its parent class.
+
 What is JVM stand for ?
+Java Virtual Machine.
+
 Is JVM platform independent?
+No, it is not Independent.
+
 What version of java are you using?
+java version "11.0.1" 2018-10-16 LTS
+
 What is JAR stand for ?
+JAR stands for "Java ARchive"
+
 What is the difference between JDK and JVM?
+JDK is Java Development Kit and JVM is Java Virtual Machine. JDK contains JVM and whole other tools for java development
+inside it. JVM converts bytecode to machine code and execute it on machine. JVM is the heart of java programming language
+and provides platform independence.  There is no matching functionality between JDK and JVM.
+
 What is the difference between JVM and JRE?
+JRE is the environment within which the virtual machine runs , and it is the implementation of JVM, it provides platform to
+execute java programs. JRE consists of JVM and java binaries and other classes to execute any program successfully.
+JRE doesn’t contain any development tools like java compiler, debugger etc. If you want to execute any java program, you
+should have JRE installed but we don’t need JDK for running any java program.
+JDK is for development purpose whereas JRE is for running the java programs.
+JDK and JRE both contains JVM so that we can run our java program.
+
 What is compile time and run time?
+Answer: Runtime and compile time are programming terms that refer to different stages of software program development. ...
+This compilation process is referred to as compile time. A compiled program can be opened and run by a user. When an
+application is running, it is called runtime
+
 What is heap?
+A heap is a part of RAM, which is an area of memory used for dynamic memory allocation. Blocks of memory are allocated
+and freed in this case in an arbitrary order.
+
 How java manage it's memory?
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
+
+
+
 What is Serialization and Deserialization?
 when to use transient variable in java?
 Difference between while and do..while loop?
