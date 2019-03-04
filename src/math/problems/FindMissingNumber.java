@@ -1,5 +1,7 @@
 package math.problems;
 
+import java.util.Arrays;
+
 /**
  * Created by mrahman on 04/22/17.
  */
@@ -11,7 +13,19 @@ public class FindMissingNumber {
          * For example {10, 2, 1, 4, 5, 3, 7, 8, 6}. One number will be missing in array (9 in this case).
          * Write java code to find the missing number from the array. Write static helper method to find it.
          */
-         int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
 
+         int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+         int missingNumber = getMissingNumber(array,10);
+         System.out.printf("Missing Number  in array %s is %d %n" , Arrays.toString(array), missingNumber);
+
+    }
+
+    private static int getMissingNumber(int [] array, int n){
+        int actualSum=0;
+        int expectedSum = (n*(n+1)/2);
+        for (int i:array){
+            actualSum=actualSum+i;
+        }
+        return expectedSum-actualSum;
     }
 }
