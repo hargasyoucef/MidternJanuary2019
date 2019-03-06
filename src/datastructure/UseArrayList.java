@@ -35,6 +35,7 @@ public class UseArrayList {
 		int[] array = new int[list.size()];
 		// Using while loop with Iterator to retrieve data.
 		System.out.println("Using while loop with Iterator to retrieve data");
+
 		Iterator it = list.listIterator();
 		while (it.hasNext()) {
 			System.out.println(it.next());
@@ -60,14 +61,5 @@ public class UseArrayList {
 			e.getMessage();
 
 		}
-
-
 	}
 }
-
-
-
-
-
-
-
