@@ -1,5 +1,7 @@
 package algorithm;
 
+import java.util.Arrays;
+
 public class Sort {
 
     long executionTime = 0;
@@ -200,8 +202,7 @@ public class Sort {
         final long startTime = System.currentTimeMillis();
         int [] list = array;
 
-       // public void sort(int arrA[]) {
-            int size = array.length;
+        int size = array.length;
 
             // Build heap
             for (int i = size / 2 - 1; i >= 0; i--)
@@ -255,14 +256,37 @@ public class Sort {
 
 
     public int [] bucketSort(int [] array){
+        final long startTime = System.currentTimeMillis();
         int [] list = array;
-        //implement here
-        
-        
+        int i, j;
+        int[] bucket = new int[array.length+1];
+        Arrays.fill(bucket, 0);
 
+          for (i = 0; i < array.length; i++) {
+                bucket[array[i]]++;
+            }
+
+            int k=0;
+            for (i = 0; i < bucket.length; i++) {
+                for (j = 0; j<bucket[i]; j++) {
+                    array[k++] = i;
+                }
+            }
+
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
         return list;
     }
-    
+
+    /***********************************************  Shell Sort ******************************************************/
+
+
+
+
+
+
+
     public int [] shellSort(int [] array){
         int [] list = array;
         //implement here

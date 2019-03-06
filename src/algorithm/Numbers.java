@@ -88,9 +88,18 @@ public class Numbers {
 		int n5 = num.length;
 		randomize (num, n5);
 
-		/************************************************< HeapSort >*****************************************************/
+		/************************************************< bucketSort >*****************************************************/
 
+		algo.bucketSort(num);
+		long bucketSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Bucket Sort take: " + bucketSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "Bucket_sort", "SortingNumbers");
+		List<String> number6 = connectToSqlDB.readDataBase("Bucket_sort", "SortingNumbers");
+		printValue(number6);
+		int n6 = num.length;
+		randomize (num, n6);
 
+		/************************************************< Sort >*****************************************************/
 
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
