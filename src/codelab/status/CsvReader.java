@@ -15,6 +15,9 @@ public class CsvReader {
          */
 
         String csvFilePath = System.getProperty("user.dir") + "/src/codelab/status/roster-file-03-02-2019.csv";
+        int counter = 0;
+        int [] array = new int[100];
+
         String line = "";
         String cvsSplitBy = ",";
         BufferedReader br = null;
@@ -39,6 +42,9 @@ public class CsvReader {
         }
         Collections.sort(roster);
         for(Trainee student:roster) {
+            array[counter] = student.getNumberOfExercisesSolved();
+            counter++;
+
             if (student.getNumberOfExercisesSolved()>=600) {
                 System.out.print("You did pretty good-->                    ");
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
@@ -62,6 +68,18 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+        int sum=0;
+        for (int i=0; i<=counter; i++){
+            sum+= array[i];
+            System.out.println(array[i]);
+        }
+        long average;
+        average = sum/counter ;
+
+
+        System.out.println(" average score of the class: "+average);
+
+
 
     }
 

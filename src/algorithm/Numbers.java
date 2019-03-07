@@ -99,7 +99,19 @@ public class Numbers {
 		int n6 = num.length;
 		randomize (num, n6);
 
-		/************************************************< Sort >*****************************************************/
+		/************************************************< Shell Sort >*****************************************************/
+
+		algo.shellSort(num);
+		long shellSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort take: " + shellSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "Shell_sort", "SortingNumbers");
+		List<String> number7 = connectToSqlDB.readDataBase("Shell_sort", "SortingNumbers");
+		printValue(number7);
+		int n7 = num.length;
+		randomize (num, n6);
+
+
+
 
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
