@@ -1,18 +1,63 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
-
+A.Data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified
+efficiently. Data structure is a collection of data values, the relationships among them, and the functions or operations
+ that can be applied to the data.
 
 What are the various operations that can be performed on different Data Structures?
+A. General operations performed on a data structure are -
+- Insertion, to add items to it
+- Deletion, to remove items from it
+- Modification, to modify items
+- Searching, to search for a particular item
+- Sorting, to sort the items in a required order.
+
 List out the areas in which data structures are applied extensively?
+A. The name of areas are:
+· Compiler Design,
+· Operating System,
+· Database Management System,
+· Statistical analysis package,
+· Numerical Analysis,
+· Graphics,
+· Artificial Intelligence,
+· Simulation
+
 what is an Array?
+A. An array, in the context of Java, is a dynamically-created object that serves as a container to hold constant number
+of values of the same type. By declaring an array, memory space is allocated for values of a particular type
+
 what is the difference between the Array and ArrayList?
+A.Array is a fixed size data structure where as in Arraylist we can modify length by appending elements afterwards.
+For array we have to mention size earlier because fixed memory has to be allocated before but in Arraylist mentioning size is not fixed.
+One more difference is that Arraylist cannot hold primitive datatypes as it can hold only objects referring to datatype.
+
 what is LinkedList?
+A.Linked List are linear data structures where the elements are not stored in contiguous locations and every element is a separate
+object with a data part and address part. The elements are linked using pointers and addresses. Each element is known as a node.
+
+
 How is an Array different from Linked List?
+A. an array requires less memory than a linked list for storing the same number of elements.
+An array is the data structure that contains a collection of similar type data elements whereas the Linked list is considered as non-primitive
+data structure contains a collection of unordered linked elements known as nodes.
+In the array the elements belong to indexes,  In a linked list though, you have to start from the head and work your way through until you get the element you are looking for.
+In an array, memory is assigned during compile time while in a Linked list it is allocated during execution or runtime.
+Arrays are of fixed size. In contrast, Linked lists are dynamic and flexible and can expand and contract its size.
+Operations like insertion and deletion in arrays consume a lot of time. On the other hand, the performance of these operations in Linked lists is fast.
+Elements are stored consecutively in arrays whereas it is stored randomly in Linked lists
+
 what is queue?
+A.Queues typically, but do not necessarily, order elements in a FIFO (first-in-first-out) manner. Among the exceptions are priority queues, which order elements
+according to a supplied comparator, or the elements' natural ordering, and LIFO queues (or stacks) which order the elements LIFO (last-in-first-out).
+
 what is stack?
+A.It is a collection that is based on the last in first out (LIFO) principle. On Creation, a stack is empty. It extends
+Vector class with five methods that allow a vector to be treated as a stack.
+
 what is FIFO and LIFO?
+
 what is the order of complexity?
 what is the best case to search an element from an array?
 what is the worst case to search an element from an array?

@@ -22,7 +22,7 @@ public class Numbers {
 
 	public static void main(String[] args) throws Exception {
 		
-		int [] num = new int[100];
+		int [] num = new int[1000000];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
@@ -115,6 +115,8 @@ public class Numbers {
 
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
+		// Conclusion:
+		// Merge Sort is the best sorting Algo according to the obtained results.
 
 	}
 
