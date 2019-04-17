@@ -57,15 +57,48 @@ A.It is a collection that is based on the last in first out (LIFO) principle. On
 Vector class with five methods that allow a vector to be treated as a stack.
 
 what is FIFO and LIFO?
+A.FIFO is an abbreviation for first in, first out. It is a method for handling data structures where the first element is processed
+first and the newest element is processed last. ... LIFO is an abbreviation for Last in, first out is same as fist in, last out (FILO).
 
 what is the order of complexity?
+A.This means that it is a certain mathematical expression of the size of the input, and the algorithm finishes between two factors of it.
+Generally, the smaller the order of complexity of the program's underlying algorithm, the faster it will run and the better it will scale
+as the input gets larger.
+
 what is the best case to search an element from an array?
+A.Linear search is also known as sequential search. If there are n elements in the array then, in the best case key is found in 1 comparison.
+While in the worst case it takes n comparison. Best case occurs when the key is at first position of the array.
+
 what is the worst case to search an element from an array?
+A.The worst case to search an element from an array is selection search.
+
 what is tree in data structure?
+A.n computer science, a binary tree is a tree data structure in which each node has at the most two children, which are
+referred to as the left child and the right child.
+
 what is graph in data structure?
+A.A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices
+and the edges are lines or arcs that connect any two nodes in the graph.
+
 what is the difference between the HashTable and HashMap?
+A.There are several differences between HashMap and Hashtable in Java:
+  Hashtable is synchronized, whereas HashMap is not. This makes HashMap better for non-threaded applications, as unsynchronized Objects typically perform better than synchronized ones.
+  Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+  One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order
+  (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as
+  easy if you were using Hashtable.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A.The major data structures used are as follows:
+  · RDBMS – Array (i.e. Array of structures)
+  · Network data model – Graph
+  · Hierarchical data model – Trees
+
 How HashMap works in java?
+A.HashMap in Java works on hashing principle. ... When we call put method, hashcode() method of the key object is called
+so that hash function of the map can find a bucket location to store value object, which is actually an index of the internal
+array, known as the table.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
 What are the different ways of copying an array into another array?
 What is difference between an array and a linked list?
